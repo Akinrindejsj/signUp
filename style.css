@@ -1,0 +1,118 @@
+body{
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Urbanist', sans-serif;
+}
+.dissapear{
+    display: none;
+}
+.side{
+    width: 30%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #FEF4F4;
+    padding: 20px;
+}
+.main{
+    width: 70%;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding-bottom: 50px;
+}
+.former.active{
+    display: block;
+}
+.former{
+    display: none ;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.form-check-input:checked {
+    background-color: red !important;
+    border-color: red !important;
+}
+.form-control:focus {
+    border-color: red !important; /* Red border */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.7) !important; /* Red glow */
+}
+.form-label{
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+.form-control{
+    font-size: 0.8rem;
+}
+input{
+    font-size: 0.8rem !important;
+}
+select{
+    font-size: 0.8rem !important;
+}
+button{
+    font-size: 0.8rem !important;
+    padding: 0.5rem 1rem !important;
+}
+.form-check-label{
+    font-size: 0.8rem !important;
+}
+html {
+    font-size: 16px; 
+}
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (max-width: 750px) {
+    .side{
+        display: none !important;
+    }
+    /* Your responsive design here */
+    .main{
+        width: 100%;
+        margin-left: 0;
+    }
+    .dissapear{
+        display:block !important;;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 13px; 
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px; 
+    }
+}
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #e60000 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e60000;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }

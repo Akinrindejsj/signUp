@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.0/dist/phosphor.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div style="display: flex;">
+     <div class="side" >
+        <img src="images/Logo.svg" alt="" style="width: 6rem;padding-top: 15%;">
+        <h1 style="font-weight: 700; font-size: 1.1rem;margin-top: 30px;">Welcome to coached</h1>
+        <p style="font-weight: 500;color: #646E82;font-size: 0.7rem;">Join the platform designed to meet your unique needs and goals whether as a coach, coachee or an organization.</p> 
+        <img src="images/undraw_goals_re_lu76 1 (1).svg" alt="" style="width:15rem;margin-top: 6rem;">
+     </div>
+     <div class="main">
+        <div class="dissapear">
+        <img src="images/Logo.svg" alt="" style="width: 6rem;padding-bottom: 10%;padding-left: 10px;">
+        <h1 style="font-weight: 700; font-size: 1.5rem;padding-bottom: 15%;text-align: center;color: red;">Welcome to coached</h1>
+        </div>
+        <form>
+        <div id="former" class="former active">
+            <div style="display: flex; justify-content: space-between; ">
+                <h3 style="font-weight: 700;color: black; font-size: 1.1rem;">Sign Up</h3>
+                <p style="font-weight: 400;color:#ED1B24;font-size: 0.8rem;">Step 1 of 2</p>
+            </div>
+            
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname">
+                </div>
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname">
+                </div>
+                <div class="mb-3">
+                    <label for="number" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="number" name="number">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="company" class="form-label">Company Name</label>
+                    <input type="text" class="form-control" id="company" name="company">
+                </div>
+                <div class="mb-3">
+                    <label for="type" class="form-label">User Type</label>
+                    <select class="form-select" aria-label="Default select example" name="type">
+                        <option selected>Select</option>
+                        <option value="coach">Coach</option>
+                        <option value="coachee">Coachee</option>
+                        <option value="organization">Organization</option>
+                    </select>
+                </div>    
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="termsCheckbox" style="margin-top: 0.4rem;">
+                    <label style="color: #646E82;" class="form-check-label" for="termsCheckbox">
+                        I accept the <a href="#" style="text-decoration: none;color: red;">Terms and Conditions</a> and <a href="#" style="text-decoration: none;color: red;">Privacy Policy</a>.
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-danger mt-3" id="submitBtn" disabled style="width: 100%;">Sign Up</button>
+            
+            <div class="mt-3">
+                <p style="font-size: 0.8rem;color: #646E82;text-align: center;">Already have an account? <a href="#" style="text-decoration: none;color: red;">Sign In</a></p>
+            </div>
+        </div>
+        <div id="former2" class="former active">
+            <div style="margin-bottom: 50px;"> 
+                <div style="display: flex; gap: 10px;">          
+                    <button style="
+                    border: none; 
+                    border-radius: 50%; 
+                    width: 24px; 
+                    height: 24px; 
+                    display: flex; 
+                    align-items: center; 
+                    justify-content: center; 
+                    background-color: #f0f0f0; 
+                    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+                    cursor: pointer; 
+                    padding: 0;">
+                    <img src="images/Vector (3).svg" alt="Icon" style="width: 12px; height: 12px;">
+                  </button>
+                <h3 style="font-size: 1.2rem;font-weight: 700;">Back</h3>
+                </div>   
+            </div>    
+            <div style="display: flex; justify-content: space-between; ">
+                <h3 style="font-weight: 700;color: black; font-size: 1.1rem;">Create Password</h3>
+                <p style="font-weight: 400;color:#ED1B24;font-size: 0.8rem;">Step 2 of 2</p>
+            </div>
+            <div class="mb-3">
+                <h3 style="font-weight: 500;color: #646E82;font-size: 0.7rem;">Password must be at least 8 characters long. It must contain at least
+                    1 special character, 1 uppercase letter, 1 lowercase letter and
+                    1 numerical character</h3>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="password form-control" id="password" >
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" name="password">
+            </div>
+            <button type="submit" class="btn btn-danger mt-3" id="submitBtn" disabled style="width: 100%;">Submit</button>
+        </div>
+     </form>
+   </div>
+   <script src="scripts.js"></script>
+</body>
+</html>
